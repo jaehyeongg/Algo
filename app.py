@@ -10,7 +10,7 @@ app.secret_key = 'qwer!@!@'
 # AWS 자격 증명 및 S3 클라이언트 생성
 session2 = boto3.Session(
 
-    region_name='us-east-2'
+    region_name='ap-northeast-1'
 )
 s3 = session2.client('s3')
 
@@ -163,7 +163,7 @@ def register() :
         
 # main
 if __name__ == '__main__' :
-    app.run(debug=True)
+    app.run(debug=True,port=80)
 
 
 
