@@ -5,8 +5,8 @@ from flask import *
 def db_connect() :
     db = pymysql.connect(
         user = 'root',
-        password = '12345',
-        host = 'localhost',
+        password = 'admin12345',
+        host = 'coupangdb.cwshg6arkkpy.ap-northeast-1.rds.amazonaws.com',
         db = 'project',
         charset = 'utf8',
         autocommit = True
